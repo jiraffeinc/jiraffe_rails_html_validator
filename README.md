@@ -26,7 +26,7 @@ class Blog < ActiveRecord::Base
   # standard validation
   validates :body, html: true
 
-  # with allow_nil
+  # with exclude tags
   validates :body, html: { exclude_tags: %w(html head body script style) }
 end
 ```
