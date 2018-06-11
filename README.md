@@ -8,7 +8,7 @@ This gem adds the capability of validating HTML to ActiveRecord and ActiveModel.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'jiraffe_rails_html_validator'
+gem 'rails_html_validator'
 ```
 
 And then execute:
