@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jiraffe_rails_html_validator/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "jiraffe_rails_html_validator"
+  spec.name          = "jiraffe_html_validator"
   spec.version       = JiraffeRailsHtmlValidator::VERSION
   spec.authors       = ["kawaoka"]
   spec.email         = ["br2jn51@yahoo.co.jp"]
