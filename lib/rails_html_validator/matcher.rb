@@ -1,4 +1,5 @@
 require "nokogiri"
+require "rspec"
 
 module RailsHtmlValidator
   module Matchers
