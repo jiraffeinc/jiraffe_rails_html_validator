@@ -1,10 +1,10 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "jiraffe_rails_html_validator/version"
+require "rails_html_validator/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "jiraffe_rails_html_validator"
-  spec.version       = JiraffeRailsHtmlValidator::VERSION
+  spec.name          = "rails_html_validator"
+  spec.version       = RailsHtmlValidator::VERSION
   spec.authors       = ["kawaoka"]
   spec.email         = ["br2jn51@yahoo.co.jp"]
 

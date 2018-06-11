@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jiraffe_rails_html_validator (0.1.1)
+    rails_html_validator (0.1.1)
       activemodel (>= 3.0.0)
       nokogiri
 
@@ -53,7 +53,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   bundler (~> 1.16)
-  jiraffe_rails_html_validator!
+  rails_html_validator!
   rake (~> 10.0)
   rspec (~> 3.0)
   sqlite3

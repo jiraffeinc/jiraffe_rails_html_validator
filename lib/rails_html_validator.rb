@@ -1,4 +1,4 @@
-require "jiraffe_rails_html_validator/version"
+require "rails_html_validator/version"
 require 'active_model'
 require 'active_support/i18n'
 require 'nokogiri'

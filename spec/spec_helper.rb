@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "jiraffe_rails_html_validator"
+require "rails_html_validator"
 
 require 'rspec'
 require 'sqlite3'
