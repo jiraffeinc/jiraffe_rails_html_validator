@@ -13,7 +13,6 @@ module RailsHtmlValidator
         return false if validators.blank?
 
         validators.first.validate_each(model, attribute, html)
-        p model.errors.messages[attribute]
         model.errors.messages[attribute].length > 0
       end
     end
