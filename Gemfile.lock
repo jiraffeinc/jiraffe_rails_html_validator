@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_html_validator (0.1.7)
+    rails_html_validator (0.1.8)
       activemodel (>= 3.0.0)
       nokogiri
       rspec (~> 3.0)
