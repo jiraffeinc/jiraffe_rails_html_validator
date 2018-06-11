@@ -20,6 +20,7 @@ module HtmlValidatorSpec
   end
 end
 
+
 RSpec.describe "html validation" do
 
   before(:all) do
@@ -120,4 +121,19 @@ RSpec.describe "html validation" do
       end
     end
   end
+end
+
+RSpec.describe HtmlValidatorSpec::BlogWithExcludeScript, type: :model do
+  before(:all) do
+    ActiveRecord::Schema.define(version: 1) do
+      create_table :html_validator_spec_blogs, force: true do |t|
+        t.column :body, :string
+      end
+    end
+  end
+
+  after(:all) do
+    ActiveRecord::Base.connection.drop_table(:html_validator_spec_blogs)
+  end
+  it { is_expected.to exclude_html_tag_of :body, tag: :script }
 end
