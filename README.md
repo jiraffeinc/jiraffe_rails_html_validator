@@ -1,8 +1,7 @@
 # JiraffeRailsHtmlValidator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jiraffe_rails_html_validator`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem adds the capability of validating HTML to ActiveRecord and ActiveModel.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class Blog < ActiveRecord::Base
+  # standard validation
+  validates :body, html: true
+
+  # with allow_nil
+  validates :body, html: { exclude_tags: %w(html head body script style) }
+end
+```
+
+### With ActiveModel
+
+```ruby
+class Blog
+  include ActiveModel::Validations
+
+  attr_accessor :body
+
+  # with legacy syntax (the syntax above works also)
+  validates_url :body, html: true
+end
+```
+
 
 ## Development
 
@@ -32,7 +53,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jiraffe_rails_html_validator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jiraffeinc/jiraffe_rails_html_validator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
