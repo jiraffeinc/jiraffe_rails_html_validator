@@ -44,6 +44,12 @@ class Blog
 end
 ```
 
+### Rspec Matcher
+```ruby
+RSpec.describe Blog, type: :model do
+  it { is_expected.to exclude_html_tag_of :body, tag: :script }
+end
+```
 
 ## Development
 
