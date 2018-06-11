@@ -1,0 +1,5 @@
+en:
+  errors:
+    messages:
+      html: "is not a valid HTML"
+      html_tag: "cannot use %{tag} tag"

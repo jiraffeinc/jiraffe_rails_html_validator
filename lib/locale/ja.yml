@@ -1,0 +1,5 @@
+ja:
+  errors:
+    messages:
+      html: "HTMLが壊れています"
+      html_tag: "%{tag}タグは使用できません"
