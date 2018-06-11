@@ -1,2 +1,2 @@
 require 'html_validator'
-require 'matcher'
+require 'rails_html_validator/matcher'
