@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jiraffe_rails_html_validator (0.1.0)
+    jiraffe_rails_html_validator (0.1.1)
       activemodel (>= 3.0.0)
       nokogiri
 
