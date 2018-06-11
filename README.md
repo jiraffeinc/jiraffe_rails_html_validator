@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jiraffe_rails_html_validator
+    $ gem install rails_html_validator
 
 ## Usage
 
