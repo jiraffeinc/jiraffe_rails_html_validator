@@ -44,6 +44,12 @@ RSpec.describe "html validation" do
       expect(blog).to be_valid
     end
 
+    it "returns valid with html5 tag" do
+      blog.body = "<section>test blog post</section>"
+      blog.valid?
+      expect(blog).to be_valid
+    end
+
     it "returns a default error message" do
       I18n.locale = :en
       blog.body = "<div>test blog post</div></p>"
