@@ -1,7 +1,6 @@
 require "rails_html_validator/version"
 require 'active_model'
 require 'active_support/i18n'
-require 'nokogumbo'
 I18n.load_path += Dir[File.dirname(__FILE__) + "/locale/*.yml"]
 
 module ActiveModel
