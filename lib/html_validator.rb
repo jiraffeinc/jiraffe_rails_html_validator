@@ -32,9 +32,9 @@ module ActiveModel
 
       def ignore_html5_tag_errors errors
         checker = HTML5_TAGS.map { |tag| "Tag #{tag} invalid"}
-        regexp = Regexp.union()
+        regexp = Regexp.union(checker)
         errors.select do |error|
-          regexp.match(error.message).blank?
+          !(regexp === error.message)
         end
       end
 
