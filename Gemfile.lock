@@ -1,11 +1,10 @@
 PATH
   remote: .
   specs:
-    rails_html_validator (0.1.12)
+    rails_html_validator (0.1.13)
       activemodel (>= 4.0, < 6)
       activesupport (>= 4.0, < 6)
       nokogiri
-      rspec (~> 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -57,6 +56,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   rails_html_validator!
   rake (~> 10.0)
+  rspec (~> 3.0)
   sqlite3
 
 BUNDLED WITH
