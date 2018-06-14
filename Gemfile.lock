@@ -2,7 +2,8 @@ PATH
   remote: .
   specs:
     rails_html_validator (0.1.12)
-      activemodel (>= 3.0.0)
+      activemodel (>= 4.0, < 6)
+      activesupport (>= 4.0, < 6)
       nokogiri
       rspec (~> 3.0)
 
@@ -52,7 +53,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
+  activerecord (>= 4.0, < 6)
   bundler (~> 1.16)
   rails_html_validator!
   rake (~> 10.0)
